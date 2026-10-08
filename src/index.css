@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Literata', Georgia, serif;
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius: 4px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+}
+
+:root {
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Literata', Georgia, serif;
+  --bg-canvas: #FAFAF8;
+  --brand-primary: #1B7A77;
+  --accent-detail: #1B7A77;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  background-color: #FAFAF8;
+  color: #1B7A77;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 400;
+  background-color: #FAFAF8;
+  color: #1B7A77;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Headings: Manrope, line-height 1.25-1.35, no negative letter-spacing */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: normal;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: normal;
+}
+
+h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: normal;
+}
+
+h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: normal;
+}
+
+/* Body copy: Literata at 16px minimum, line-height 1.6-1.7, weight 400 */
+p, li, dd, dt, figcaption, blockquote, .font-body {
+  font-family: var(--font-body);
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* UI text, navigation, buttons, labels */
+nav a, button, label {
+  font-family: var(--font-heading);
+}
+
+/* Inputs, textareas, selects, and buttons inherit correct font */
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+/* Hide scrollbar completely across all browsers while preserving scrollability */
+html,
+body,
+#root,
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  display: none !important;
+  background: transparent !important;
+}

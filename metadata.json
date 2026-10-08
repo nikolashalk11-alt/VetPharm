@@ -1,0 +1,8 @@
+{
+  "name": "Remix VetPharm - Κτηνιατρείο \u0026 Κτηνιατρικό Φαρμακείο",
+  "description": "VetPharm: Κτηνιατρείο και Κτηνιατρικό Φαρμακείο στα Ιωάννινα. Λεωφόρος Ιωαννίνων 82, Ανατολή. Τηλέφωνο επικοινωνίας: 26510 83318.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
